@@ -1,4 +1,4 @@
-$orgName="foxnetsolutions.co.uk"
+$orgName="Organisation Name/DOMAIN"
 $acctName="first.last@OrgName"
 $credential = Get-Credential -UserName $acctName -Message "Type Password"
 #Azure Active Directory
