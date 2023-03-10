@@ -1,5 +1,5 @@
 $orgName="foxnetsolutions.co.uk"
-$acctName="lana.kane@foxnetsolutions.co.uk"
+$acctName="first.last@foxnetsolutions.co.uk"
 $credential = Get-Credential -UserName $acctName -Message "Type Password"
 #Azure Active Directory
 Connect-AzureAD -Credential $credential
