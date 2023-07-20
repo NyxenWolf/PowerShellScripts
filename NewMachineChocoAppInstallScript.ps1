@@ -1,3 +1,7 @@
+# Install Chocolatey Service and bypass the Execution Policy
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+# Application installations after Service installation
 choco install firefox -y
 choco install googlechrome -y
 choco install jre8 -y
