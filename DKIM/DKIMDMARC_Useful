@@ -1,0 +1,21 @@
+Valuable Email DKIM/DMARC learning Material
+
+If an email fails to send or be recieved. This is another way of finding a solution to the problem.
+
+Powershell Commands:
+
+nslookup
+
+server
+
+set type=TXT
+_DMARC.domain.domain
+
+_DMARC.domain.domain for examples
+
+
+ v=DMARC1;p=none;sp=none;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400 (Strict mode)
+
+Name; _DMARC.FNS.co.uk
+Type; TXT
+Value; v=DMARC1; p=none; pct=50; ruf=mailto:dmarc@FNS.co.uk; rua=mailto:dmarc@FNS.co.uk; adkim=r; aspf=r (Relaxed (Learning Mode))
