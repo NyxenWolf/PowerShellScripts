@@ -1,3 +1,9 @@
+
+
+
+#Connect computer to ADDS. Replace srvrcore123 with actual DC
+Add-Computer -computername srvrcore123 -domainname ad.defacto.example -credential AD/admin -restart -force
+
 # Install Chocolatey Service and bypass the Execution Policy
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
@@ -19,3 +25,6 @@ choco install itunes -y
 choco install wireshark -y
 choco install powertoys -y
 choco install advanced-ip-scanner -y
+
+# Update all applications to current versions
+winget upgrade -h -all
